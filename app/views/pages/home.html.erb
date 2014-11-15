@@ -1,9 +1,18 @@
 
 <div class="body"> <!-- start of "body" div -->
 	<h2>McEvoy Office Services Client Database</h2>
-	<div class="jumbotron"> <!--start of "jumbotron" div -->
-		
-		<p class ="text-center"><%= link_to "Click Here to Login", "#", class: "btn btn-primary" %></p>
-		<p class ="text-center"><%= link_to "Not Registered?", "#", class: "btn btn-primary" %></p>
+	<div class="jumbotron center"> <!--start of "jumbotron" div -->
+
+	<% if user_signed_in? %> <!-- asking if user is signed in -->
+
+		#do something	<!-- content if THEY ARE signed in -->
+
+	<% else %>	<!-- else DO/SHOW them the sign up / register links -->
+
+		<p class ="text-center"><%= link_to "Click Here to Login", new_user_session_path, class: "btn btn-primary" %>
+		</p>
+		<p class ="text-center"><%= link_to "Not Registered?", new_user_registration_path, class: "btn btn-primary" %>
+		</p>
+	<% end %>  <!-- end of user_signed_in? block -->
 	</div> <!-- end of "jumbotron" div -->
 </div> <!-- end of "body" div -->

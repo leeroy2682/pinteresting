@@ -21,8 +21,14 @@
           <li><%= link_to "Home", root_path %></li>
           <li><%= link_to "About", about_path %></li>
           <li><%= link_to "Database", database_path %></li>
-          </li>
-        </ul>
+          
+<!-- asking if user signed in, then show the log out link -->
+          <% if user_signed_in? %> 
+            <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li> 
+          <% end %>
+<!-- have to add this "method: delete" for it to actually kill the session -->
+          </li> 
+        </ul> 
         <form class="navbar-form navbar-right" role="search"> <!-- search in the navbar -->
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Search">
