@@ -22,5 +22,6 @@ module Pinteresting
 
     # required for heroku
     config.assets.initialize_on_precompile = false
+    config.action_mailer.default_url_options = { host: "gmail.com" }
   end
 end
