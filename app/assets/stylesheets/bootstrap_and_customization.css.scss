@@ -1,11 +1,11 @@
+
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,900|Roboto:400,900|Yanone+Kaffeesatz:400,700);
 
 $body-bg: #009933; 	/** sets body bg color **/
 
 $jumbotron-bg: #2ecc71;		/** sets divcontainer jumbotron bg color **/
 
-$font-family: 'Yanone Kaffeesatz', 'Roboto', 'Lato', sans-serif;
+$font-family-sans-serif:	'Yanone Kaffeesatz', sans-serif;
 
 
 /** navbar custimization **/
@@ -36,6 +36,10 @@ h2 {
 	max-width: 300px;
 	margin: auto;
 
+}
+
+.dataentry {
+	max-width: 450px;
 }
 
 @import 'bootstrap';
