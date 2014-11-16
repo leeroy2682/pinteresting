@@ -1,11 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700);
 
-@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
+$font-family-sans-serif: 'Ubuntu';
 
 $body-bg: #009933; 	/** sets body bg color **/
 
 $jumbotron-bg: #2ecc71;		/** sets divcontainer jumbotron bg color **/
 
-$font-family-sans-serif:	'Yanone Kaffeesatz', sans-serif;
 
 
 /** navbar custimization **/
@@ -15,6 +15,7 @@ $navbar-default-link-hover-color: #005C1F;
 $navbar-default-link-hover-bg: #ffffff;
 $navbar-default-brand-hover-bg: #ffffff;
 $navbar-default-brand-hover-color: #005C1F;
+
 h2 {
 	text-align: center;
 	font-size: 20px;
