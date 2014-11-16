@@ -27,5 +27,5 @@ Pinteresting::Application.configure do
   # number of complex assets.
   config.assets.debug = true
   # required for heroku
-  config.action_mailer.default_url_option = { :host => 'localhost:3000'}  
+  config.action_mailer.default_url_option = { :host => ''}  # took out localhost:3000 from brackets
 end
