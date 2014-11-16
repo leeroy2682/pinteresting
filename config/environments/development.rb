@@ -27,5 +27,5 @@ Pinteresting::Application.configure do
   # number of complex assets.
   config.assets.debug = true
   # required for heroku
-  config.action_mailer.default_url_option = { :host => 'http://mcevoy.herokuapp.com'}  # took out localhost:3000 from brackets
+  config.action_mailer.default_url_option = { :host => 'localhost:3000'}  # took out localhost:3000 from brackets
 end
